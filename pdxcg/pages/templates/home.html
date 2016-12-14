@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="pageImgDiv">
+        <div class="background background-image"
+             style="max-width: 100%; height: 894px; width: 100%; background-image: url(https://pdxcodeguild.com/wp-content/uploads/2016/03/classroom-1.jpg);">
+        </div>
+    </div>
+    <div class="ctCont">
+        <div class="callToAction">
+            Learn to Code • Get a High-Paying Job<br>
+            <a class="button">GET STARTED ></a>
+        </div>
+    </div>
+
+    <article class="orange">
+        <div class="artCont">
+            <h1>GET CODING</h1>
+            PDX Code Guild empowers students with the intensive training required to get a high paying job in the tech
+            industry. We teach programming skills effectively and efficiently to get people on their way to a better
+            career and lifestyle.
+        </div>
+    </article>
+
+    <article class="white">
+        <div class="row">
+            <div class="campsLeftBox center">
+                <h3>Full Stack Python Developer Boot Camps</h3>
+                <hr>
+                <h4>Upcoming Bootcamps</h4>
+
+                <span style="font-weight: bolder;">
+                    Day: January 3rd, 2017<br>
+                M-F 9:30 am – 4:30 pm<br>
+                <br>
+                Evening: January 16th, 2017<br>
+                M-F 6:00 pm – 9:30 pm<br>
+                </span>
+                <p>
+                    Python-based Developer Bootcamps are intensive courses that combine individual projects and group
+                    study to rapidly advance you along your path to becoming a developer. These hands-on, immersive
+                    programs are offered on two schedules: Full-time twelve-week day or sixteen-week evening.
+                </p>
+                <p>
+                    Tuition is $8000 and we have a $2000 diversity discount for women, LGBTQ+, and anyone from a
+                    demographic that is underrepresented in the tech industry. Many of our students also qualify for
+                    state grants.
+                </p>
+                <a href="{% url 'apply' %}" class="orangeButton xlButton">Apply</a><br>
+                <a href="{% url 'schedule' %}" class="orangeButton xlButton">SCHEDULE INFORMATIONAL APPOINTMENT</a>
+            </div>
+            <div class="campsRightBox"></div>
+
+        </div>
+        <div class="row">
+            <div class="courseLeftBox"></div>
+            <div class="courseRightBox center">
+                <h3>Introductory Courses</h3>
+                <hr>
+                <h4>Upcoming Intro Courses:</h4>
+
+                <span style="font-weight: bolder;">
+                    TBA
+                </span>
+
+                <p>Introduction courses are two week, part-time classes. This short course is about answering the basic
+                    questions people have about the actual practice and career of web development.</p>
+
+                <p>Tuition for Intro Courses is $450.</p>
+            </div>
+
+        </div>
+    </article>
+
+    <article>
+        <div class="artCont center">
+            <p style="font-style: italic; color: #ff6f1c; font-size: 18px">The diverse group from different backgrounds
+                and hometowns in our class breeds a good learning environment
+                with so many unique perspectives. The one thing we have in common is an intellectual curiosity, wanting
+                to
+                understand what makes our favorite websites, software and apps work.</p>
+            <span style="font-weight: bolder; color: #ff6f1c;">Michael Dunlevy</span><span style="color: #ff6f1c;">, Former Code Guild Student</span>
+        </div>
+    </article>
+
+    <article class="white">
+
+        <div class="flexContainer">
+            <div class="flexChild center w24">
+                <div class="icon"><i
+                        style="border-color:rgba(255,255,255,0);border-width:0px;background-color:#ff6f1c;height:48px;width:48px;line-height:48px;border-radius:50%;color:#ffffff;font-size:24px;"
+                        class="fa fontawesome-icon fa-check-circle circle-yes"></i></div>
+                <h2>Teaching Philosophy</h2>
+
+                We believe in small class sizes and high student-instructor ratio to ensure the success and
+                satisfaction of each individual.
+            </div>
+            <div class="flexChild center w24">
+                <div class="icon"><i
+                        style="border-color:rgba(255,255,255,0);border-width:0px;background-color:#ff6f1c;height:48px;width:48px;line-height:48px;border-radius:50%;color:#ffffff;font-size:24px;"
+                        class="fa fontawesome-icon fa-smile-o circle-yes"></i></div>
+                <h2>Diversity in Tech</h2>
+                We offer diversity discounts based on merit and need because we believe that every person should have
+                access to a career in tech.
+            </div>
+            <div class="flexChild center w24">
+                <div class="icon"><i
+                        style="border-color:rgba(255,255,255,0);border-width:0px;background-color:#ff6f1c;height:48px;width:48px;line-height:48px;border-radius:50%;color:#ffffff;font-size:24px;"
+                        class="fa fontawesome-icon fa-refresh circle-yes"></i></div>
+                <h2>Professional Success</h2>
+                We foster well-rounded professionals who strive for excellence in their coding craft while maintaining a
+                healthy work-life balance.
+            </div>
+        </div>
+
+    </article>
+
+    <article>
+        <div class="artCont center">
+            <p style="font-style: italic; color: #ff6f1c; font-size: 18px">Sometimes we hit brick walls when trying to
+                create web apps. But Code Guild encourages persistence and the will to work through the details will get
+                you there, even if you are at the edge of the cliff.</p>
+            <span style="font-weight: bolder; color: #ff6f1c;">Cissie Scurlock</span><span style="color: #ff6f1c;">, Former Code Guild Student</span>
+        </div>
+    </article>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <meta charset="UTF-8">
+    <title>PDX Code Guild{% block title %}{% endblock %}</title>
+</head>
+<body>
+<div id="wrapper">
+    <div id="home" style="position:relative;top:1px;"></div>
+    <div class="header-wrapper">
+        <div class="header">
+            <div class="row">
+                <div class="logo">
+                    <a class="logo-link" href="https://pdxcodeguild.com">
+                        <img src="//pdxcodeguild.com/wp-content/uploads/2016/06/PDXlogo6.png" width="110" height="110"
+                             alt="PDX Code Guild" style="max-height: 110px; height: auto;">
+                    </a>
+                </div>
+                <div class="main-menu">
+                    <ul id="menu-main-menu" class="nav">
+                        <li><a href="{% url 'home' %}"><span class="menu-text">Home</span></a></li>
+                        <li><a href="{% url 'about' %}"><span class="menu-text">About</span></a></li>
+                        <li><a href="{% url 'courses' %}"><span
+                                class="menu-text">Our Courses</span></a>
+                        </li>
+                        <li><a href="{% url 'contact' %}"><span class="menu-text">Contact us</span></a>
+                        </li>
+                        <li><a href="{% url 'apply' %}"><span class="menu-text">Apply</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block content %}
+{% endblock %}
+<article class="white center">
+
+    <h1>Where Our Graduates Work</h1>
+    <<<<<<< JS SLIDER HERE >>>>>>>
+
+</article>
+<footer class="white">
+    <div class="flexContainer">
+        <div class="flexChild">
+            <img style="max-width: 50%;" src="https://pdxcodeguild.com/wp-content/uploads/2016/06/PDXlogo3.png" alt="">
+        </div>
+
+        <div class="flexChild">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'courses' %}">Our Courses</a></li>
+                <li><a href="{% url 'contact' %}">Contact us</a></li>
+                <li><a href="{% url 'apply' %}">Apply</a></li>
+            </ul>
+        </div>
+
+        <div class="flexChild">
+            2626 SW Corbett Ave.<br>
+            Suite 100<br>
+            Portland, OR 97201
+        </div>
+    </div>
+    <div class="center">
+        Copyright 2016 PDX Code Guild | All Rights Reserved
+    </div>
+</footer>
+{% block js %}
+{% endblock %}
+</body>
+</html>
