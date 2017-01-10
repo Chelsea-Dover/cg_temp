@@ -2,57 +2,72 @@
 
 {% block content %}
     <div class="pageImgDiv">
-        <div class="background background-image"
-             style="max-width: 100%; height: 894px; width: 100%; background-image: url(https://pdxcodeguild.com/wp-content/uploads/2016/03/classroom-1.jpg);">
+        <div class="background background-image homeBackground"
+             style="max-width: 100%; height: 700px; width: 100%; background-color: #45A0B9;">
         </div>
     </div>
     <div class="ctCont">
-        <div class="callToAction">
-            Learn to Code • Get a High-Paying Job<br>
+        <figure class="rocket">
+            <img src="../../static/img/rocket.svg">
+        </figure>
+        <div class="callToActionHome">
+            <p>
+{#                Learn to Code • Get Coding#}
+                Start your career in technology today
+            </p>
             <a class="button">GET STARTED ></a>
         </div>
+        <p class="credit">Front-end created by PDX Code Guild grad Chelsea Dover</p>
     </div>
 
-    <article class="orange">
+    <article id="wayOrange" class="orange">
         <div class="artCont">
             <h1>GET CODING</h1>
+            <p>
             PDX Code Guild empowers students with the intensive training required to get a high paying job in the tech
             industry. We teach programming skills effectively and efficiently to get people on their way to a better
             career and lifestyle.
+            </p>
         </div>
     </article>
 
     <article class="white">
-        <div class="row">
-            <div class="campsLeftBox center">
-                <h3>Full Stack Python Developer Boot Camps</h3>
-                <hr>
-                <h4>Upcoming Bootcamps</h4>
+        <div class="fulls-class">
+            <div class="row">
+                <div class="campsLeftBox center">
+                    <h3>Full Stack Python Developer Boot Camps</h3>
+                    <hr>
+                    <h4>Upcoming Bootcamps</h4>
 
-                <span style="font-weight: bolder;">
+                    <span style="font-weight: bolder;">
                     Day: January 3rd, 2017<br>
-                M-F 9:30 am – 4:30 pm<br>
-                <br>
-                Evening: January 16th, 2017<br>
-                M-F 6:00 pm – 9:30 pm<br>
-                </span>
-                <p>
-                    Python-based Developer Bootcamps are intensive courses that combine individual projects and group
-                    study to rapidly advance you along your path to becoming a developer. These hands-on, immersive
-                    programs are offered on two schedules: Full-time twelve-week day or sixteen-week evening.
-                </p>
-                <p>
-                    Tuition is $8000 and we have a $2000 diversity discount for women, LGBTQ+, and anyone from a
-                    demographic that is underrepresented in the tech industry. Many of our students also qualify for
-                    state grants.
-                </p>
-                <a href="{% url 'apply' %}" class="orangeButton xlButton">Apply</a><br>
-                <a href="{% url 'schedule' %}" class="orangeButton xlButton">SCHEDULE INFORMATIONAL APPOINTMENT</a>
+                    M-F 9:30 am – 4:30 pm<br>
+                    <br>
+                    Evening: January 16th, 2017<br>
+                    M-F 6:00 pm – 9:30 pm<br>
+                    </span>
+                </div>
+                <div class="campsRightBox"></div>
             </div>
-            <div class="campsRightBox"></div>
-
+            <div>
+                    <p>
+                        Python-based Developer Bootcamps are intensive courses that combine individual projects and group
+                        study to rapidly advance you along your path to becoming a developer. These hands-on, immersive
+                        programs are offered on two schedules: Full-time twelve-week day or sixteen-week evening.
+                    </p>
+                    <p>
+                        Tuition is $8000 and we have a $2000 diversity discount for women, LGBTQ+, and anyone from a
+                        demographic that is underrepresented in the tech industry. Many of our students also qualify for
+                        state grants.
+                    </p>
+                    <div class="fulls-buttons">
+                        <a href="{% url 'apply' %}" class="orangeButton xlButton">Apply</a>
+                        <a href="{% url 'schedule' %}" class="orangeButton xlButton infoButton">SCHEDULE INFORMATIONAL APPOINTMENT</a>
+                    </div>
+            </div>
         </div>
-        <div class="row">
+
+        <div class="courseWrapper row">
             <div class="courseLeftBox"></div>
             <div class="courseRightBox center">
                 <h3>Introductory Courses</h3>
@@ -79,11 +94,14 @@
                 with so many unique perspectives. The one thing we have in common is an intellectual curiosity, wanting
                 to
                 understand what makes our favorite websites, software and apps work.</p>
-            <span style="font-weight: bolder; color: #ff6f1c;">Michael Dunlevy</span><span style="color: #ff6f1c;">, Former Code Guild Student</span>
+{#            <span style="font-weight: bolder; color: #ff6f1c;">#}
+                <strong style="font-weight: bolder; color: #ff6f1c;">Michael Dunlevy</strong>
+{#            </span>#}
+            <span style="color: #ff6f1c;">, Former Code Guild Student</span>
         </div>
     </article>
 
-    <article class="white">
+    <article class="white no-padd">
 
         <div class="flexContainer">
             <div class="flexChild center w24">
@@ -92,24 +110,37 @@
                         class="fa fontawesome-icon fa-check-circle circle-yes"></i></div>
                 <h2>Teaching Philosophy</h2>
 
-                We believe in small class sizes and high student-instructor ratio to ensure the success and
+                <p>
+                    We believe in
+                    <strong>small class sizes</strong>
+                    and
+                    <strong>high student-instructor ratio</strong>
+                    to ensure the success and
                 satisfaction of each individual.
+                </p>
             </div>
             <div class="flexChild center w24">
                 <div class="icon"><i
                         style="border-color:rgba(255,255,255,0);border-width:0px;background-color:#ff6f1c;height:48px;width:48px;line-height:48px;border-radius:50%;color:#ffffff;font-size:24px;"
                         class="fa fontawesome-icon fa-smile-o circle-yes"></i></div>
                 <h2>Diversity in Tech</h2>
-                We offer diversity discounts based on merit and need because we believe that every person should have
-                access to a career in tech.
+                <p>
+                    We offer
+                    <strong>diversity discounts</strong>
+                    based on merit and need because we believe that
+                    <strong>every person</strong>
+                    should have access to a career in tech.
+                </p>
             </div>
             <div class="flexChild center w24">
                 <div class="icon"><i
                         style="border-color:rgba(255,255,255,0);border-width:0px;background-color:#ff6f1c;height:48px;width:48px;line-height:48px;border-radius:50%;color:#ffffff;font-size:24px;"
                         class="fa fontawesome-icon fa-refresh circle-yes"></i></div>
                 <h2>Professional Success</h2>
-                We foster well-rounded professionals who strive for excellence in their coding craft while maintaining a
+                <p>
+                    We foster <strong>well-rounded professionals</strong> who strive for excellence in their coding craft while maintaining a
                 healthy work-life balance.
+                </p>
             </div>
         </div>
 
@@ -123,4 +154,9 @@
             <span style="font-weight: bolder; color: #ff6f1c;">Cissie Scurlock</span><span style="color: #ff6f1c;">, Former Code Guild Student</span>
         </div>
     </article>
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="../../static/js/lib/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="../../static/js/onscroll.js"></script>
 {% endblock %}

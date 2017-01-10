@@ -12,25 +12,27 @@
     <div id="home" style="position:relative;top:1px;"></div>
     <div class="header-wrapper">
         <div class="header">
-            <div class="row">
-                <div class="logo">
-                    <a class="logo-link" href="https://pdxcodeguild.com">
-                        <img src="//pdxcodeguild.com/wp-content/uploads/2016/06/PDXlogo6.png" width="110" height="110"
-                             alt="PDX Code Guild" style="max-height: 110px; height: auto;">
-                    </a>
-                </div>
-                <div class="main-menu">
-                    <ul id="menu-main-menu" class="nav">
-                        <li><a href="{% url 'home' %}"><span class="menu-text">Home</span></a></li>
-                        <li><a href="{% url 'about' %}"><span class="menu-text">About</span></a></li>
-                        <li><a href="{% url 'courses' %}"><span
-                                class="menu-text">Our Courses</span></a>
-                        </li>
-                        <li><a href="{% url 'contact' %}"><span class="menu-text">Contact us</span></a>
-                        </li>
-                        <li><a href="{% url 'apply' %}"><span class="menu-text">Apply</span></a></li>
-                    </ul>
-                </div>
+            <div class="logo">
+                <a class="logo-link" href="https://pdxcodeguild.com">
+                    <img src="//pdxcodeguild.com/wp-content/uploads/2016/06/PDXlogo6.png" width="68" height="68"
+                         alt="PDX Code Guild" style="max-height: 68px; height: auto;">
+                </a>
+
+                <a id="icon" class="menuIcon">
+                    &#9776;
+                </a>
+            </div>
+            <div class="main-menu">
+                <ul id="menu-main-menu" class="nav top-nav">
+                    <li><a href="{% url 'home' %}"><span class="menu-text">Home</span></a></li>
+                    <li><a href="{% url 'about' %}"><span class="menu-text">About</span></a></li>
+                    <li><a href="{% url 'courses' %}"><span
+                            class="menu-text">Our Courses</span></a>
+                    </li>
+                    <li><a href="{% url 'contact' %}"><span class="menu-text">Contact us</span></a>
+                    </li>
+                    <li><a href="{% url 'apply' %}"><span class="menu-text">Apply</span></a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -45,31 +47,37 @@
 
 </article>
 <footer class="white">
-    <div class="flexContainer">
-        <div class="flexChild">
-            <img style="max-width: 50%;" src="https://pdxcodeguild.com/wp-content/uploads/2016/06/PDXlogo3.png" alt="">
+    <div class="flexContainer baseFlex">
+        <div class="baseLogo">
+            <img style="max-width: 100%;" src="https://pdxcodeguild.com/wp-content/uploads/2016/06/PDXlogo3.png" alt="">
         </div>
 
-        <div class="flexChild">
+        <div class="baseFlex baseLinks">
             <ul>
                 <li><a href="{% url 'home' %}">Home</a></li>
+                <hr>
                 <li><a href="{% url 'about' %}">About</a></li>
+                <hr>
                 <li><a href="{% url 'courses' %}">Our Courses</a></li>
+                <hr>
                 <li><a href="{% url 'contact' %}">Contact us</a></li>
+                <hr>
                 <li><a href="{% url 'apply' %}">Apply</a></li>
             </ul>
         </div>
 
-        <div class="flexChild">
+        <div class="baseFlex baseAddress">
             2626 SW Corbett Ave.<br>
             Suite 100<br>
             Portland, OR 97201
         </div>
     </div>
-    <div class="center">
+    <div class="center miniText">
         Copyright 2016 PDX Code Guild | All Rights Reserved
     </div>
 </footer>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="../../static/js/openMenu.js"></script>
 {% block js %}
 {% endblock %}
 </body>

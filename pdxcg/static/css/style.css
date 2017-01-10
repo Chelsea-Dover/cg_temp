@@ -1,5 +1,22 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 900px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 20px;
+    }
+}
+
 body {
     background: rgba(255, 255, 255, 0) url(https://pdxcodeguild.com/wp-content/uploads/2015/10/blog_header_title_bg.jpg) no-repeat fixed center;
     background-size: cover;
@@ -22,17 +39,6 @@ a {
     color: #333;
 }
 
-.header-wrapper {
-    background-color: hsla(181, 81%, 31%, 0.9);
-    position: fixed;
-    height: 99px;
-    width: 100%;
-    left: 0;
-    top: 0;
-    border-top: 0;
-    margin: 0;
-    z-index: 100;
-}
 
 #wrapper {
     width: 100%;
@@ -41,24 +47,7 @@ a {
     overflow: visible;
 }
 
-.header {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.header .row {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.logo {
-    margin: 39px 0 -60px;
-    display: block;
-    float: left;
-    max-width: 100%;
-    zoom: 1;
-
-}
+/*UPDATE*/
 
 .row {
     padding: 0;
@@ -76,66 +65,6 @@ a {
     clear: both;
 }
 
-.logo:before, .logo:after {
-    content: " ";
-    display: table;
-}
-
-.main-menu {
-    margin-top: 0;
-}
-
-.main-menu {
-    float: right;
-    position: relative;
-    z-index: 200;
-    overflow: hidden;
-}
-
-#menu-main-menu {
-    list-style: none;
-    display: list-item;
-}
-
-.main-menu > ul > li {
-    padding-right: 45px;
-}
-
-.main-menu li {
-    float: left;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    cursor: pointer;
-}
-
-.main-menu > ul > li > a {
-    border-top: 4px solid transparent;
-    height: 83px;
-    line-height: 83px;
-}
-
-.main-menu > ul > li > a, .side-nav li a {
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0;
-}
-
-.main-menu > ul > li > a, .side-nav li a {
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0;
-    text-decoration: none;
-}
-
-.menu-text {
-    font-size: 18px !important;
-    color: white;
-
-}
-
 /*  content css */
 
 .pageImgDiv {
@@ -143,6 +72,49 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+.callToActionHome p{
+    font-size: 318%;
+    /*line-height: 1.6875;*/
+}
+
+.credit {
+    position: absolute;
+    top: 662px;
+    margin-left: 6px;
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 16px;
+}
+
+.ctCont figure{
+    width: 11em;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.callToActionHome {
+    margin-left: 40%;
+    width: 55%;
+    position: absolute;
+    top: 20%;
+    padding: 0;
+    z-index: 5;
+    font-size: 100%;
+    line-height: 1.6875;
+    /*-webkit-transform: translateY(-50%);*/
+    /*transform: translateY(-50%);*/
+    /*margin: 0 auto 0 23%;*/
+    /*width: 100%;*/
+    color: #fff;
+    /*font-size: 60px;*/
+    /*line-height: 0;*/
+    font-weight: bolder;
+    text-align: center;
+}
+
+.smallPad {
+    padding: 3em 0 0;
 }
 
 .callToAction {
@@ -153,15 +125,17 @@ a {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     /*margin: 0 auto 0 23%;*/
-    width: 100%;
+    /*width: 100%;*/
     color: #fff;
     font-size: 60px;
-    line-height: 0;
     font-weight: bolder;
     text-align: center;
+    width: 98%;
 }
 
 .callToActionBlog {
+    /*font-size: 100%;*/
+    /*line-height: 1.6875;*/
     position: absolute;
     top: 30%;
     padding: 0;
@@ -190,16 +164,28 @@ li {
     -o-background-size: cover;
 }
 
+.homeBackground {
+    background-image: url("../img/launch_1.svg");
+    background-position: center bottom;
+    background-size: 110%;
+}
+
 .button {
-    background-color: #FF6F1C;
-    border-radius: 3px;
-    color: white;
-    padding: 20px 40px;
+    background-color: #FFF;
+    border-radius: 10px;
+    color: #FF6F1C;
+    padding: 19px 30px;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
+    -webkit-transition: box-shadow .2s, border .2s;
+}
+
+.button:hover {
+    box-shadow: inset 0 0 0 5px #45a0b9;
+    border: solid 3px #fff;
 }
 
 #main {
@@ -228,7 +214,7 @@ article {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 55%;
+    width: 75%;
 }
 
 .blogCont {
@@ -367,6 +353,15 @@ article {
     margin: 3%;
 }
 
+.flexChild p, .flexChild a {
+    color: #707070;
+    font-size: 18px;
+}
+
+.flexChild a:hover {
+    color:#ff6f1c;
+}
+
 .w24 {
     width: 24%;
 }
@@ -377,11 +372,41 @@ article {
 .orange {
     background-color: #ff6f1c;
     color: #ffffff;
+    padding: 20px;
 }
 
 .white {
     background-color: #FFFFFF;
     color: #000000;
+}
+
+.blue {
+    background-color: #46A1BA;
+    color: #fff;
+    padding: 0;
+}
+
+.blue .artCont {
+    padding: 3em 0;
+}
+
+.coursesWrapper {
+    padding: 0;
+    background-color: #fff;
+}
+
+.valMiss {
+    padding: 10px;
+}
+
+.teamWrapper {
+    width: 84%;
+    margin: 0 auto;
+}
+
+.aboutWrapper {
+    width: 65%;
+    margin: 0 auto;
 }
 
 article {
@@ -397,6 +422,12 @@ article h1 {
     font-weight: bolder;
 }
 
+.fulls-buttons {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
 .center {
     text-align: center;
 }
@@ -408,14 +439,19 @@ article h1 {
 footer {
     padding: 20px;
 }
+@media screen and (min-width:790px) {
+    .menu-text:hover:after {
+        content: "";
+        border: 4px solid #FFFFFF;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -16px;
+    }
 
-.menu-text:hover:after {
-    content: "";
-    border: 4px solid #FFFFFF;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -16px;
+    .infoButton {
+        line-height: initial;
+    }
 }
 
 button {
@@ -429,26 +465,74 @@ button {
     font-weight: bold;
     cursor: pointer;
     box-sizing: border-box;
-    transition: all .2s;
+    transition: .2s;
 }
+
+.fulls-class {
+    margin: 0 auto 1em;
+}
+/**/
 
 .xlButton {
     padding: 17px 40px;
-    line-height: 60px;
+    /*line-height: 60px;*/
     font-size: 18px;
+}
+
+.baseFlex {
+    justify-content: initial;
+    /*align-items: center;*/
+}
+
+.baseAddress {
+    align-self: flex-end;
+    color: #747070;
+    margin: 15px 35px;
+}
+
+.baseLinks {
+    width: 34%;
+    margin: 15px 35px;
+    max-width: 400px;
+}
+
+.baseLinks ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.baseLinks ul li a:hover {
+    color: #f57b20;
+}
+
+.baseLinks ul li a:before {
+    font-family: 'icomoon';
+    content: "›";
+    font-size: 26px;
 }
 
 .orangeButton {
     color: #FFFFFF;
-    border-radius: 2px;
-    width: 100%;
+    border-radius: 10px;
+    width: 48%;
     background: #ff6f1c;
     border: 0 #ffffff;
+    transition: .2s;
 }
 
-.orangeButton:hover {
-    background: #ff8d61;
+.orangeButton:hover, .actions .hs-button:hover {
+    /*box-shadow: inset 0 0 0 5px #fff;*/
+    /*border: solid 3px #ff6f1c;*/
+    /*padding: 14px 40px;*/
+    border-radius: 2px !important;
+    background: #ff8d61 !important;
+    box-shadow: none !important;
 }
+
+/*.orangeButton:hover {*/
+    /*background: #ff8d61;*/
+/*}*/
 
 #map-canvas {
   	width: 100%;
@@ -458,4 +542,296 @@ button {
 
 .w1-4th {
     width: 10%;
+}
+
+/*menu*/
+
+.header-wrapper {
+    background-color: hsla(0, 0%, 100%, 0.9);
+    position: fixed;
+    height: 99px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-top: 0;
+    margin: 0;
+    z-index: 100;
+}
+
+.header{
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.miniText {
+    font-size: .8rem;
+    color: #707070;
+}
+
+.menuIcon {
+    display:none;
+}
+
+.main-menu {
+    margin-top: 0;
+    z-index: 200;
+}
+
+#menu-main-menu {
+    list-style: none;
+    display: list-item;
+    height: 100%;
+    padding: 0;
+    margin: 17px 0 0;
+}
+
+.main-menu > ul > li {
+    padding: 0 22px;
+}
+
+.main-menu li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.main-menu > ul > li > a {
+    border-top: 4px solid transparent;
+    height: 83px;
+    line-height: 83px;
+}
+
+.main-menu > ul > li > a, .side-nav li a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.main-menu > ul > li > a, .side-nav li a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+
+.menu-text {
+    font-size: 18px !important;
+    color: #f57b20;
+
+}
+
+.bootcampWrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.no-padd {
+    padding: 0;
+}
+
+.imgWrapper {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.imgWrapper img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.our-header {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.name-title {
+    padding-top: 1em;
+    text-align: left;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.biggerCont {
+    width: 70%;
+}
+
+.hbspt-form, input {
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hs-form .hs-input, .hs-form textarea.hs-input {
+    width: 100% !important;
+    box-sizing: content-box !important;
+}
+
+.actions .hs-button {
+    background-color: #FF6F1C !important;
+    border-radius: 10px !important;
+    color: #fff !important;
+    padding: 20px 30px !important;
+    font-size: 20px !important;
+    cursor: pointer !important;
+    width: 60% !important;
+    border: 0 !important;
+    background-image: none !important;
+    text-shadow: none !important;
+    transition: .2s !important;
+}
+
+.baseLogo {
+    width: 15%;
+    margin: 0;
+}
+
+footer {
+    border-top: solid 10px #efefef;
+}
+
+@media screen and (max-width:790px) {
+    .credit {
+        display: none;
+    }
+    .baseLogo {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .baseLinks {
+        width: 40%;
+    }
+
+    .fulls-buttons {
+        line-height: 48px;
+    }
+
+    .courseImg {
+            display: none;
+    }
+
+    .artCont {
+        width: 85%;
+    }
+
+    .flexChild {
+        width: 100%;
+    }
+
+    .courseWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .courseLeftBox, .courseRightBox{
+        width: 100%;
+    }
+
+    .campsRightBox {
+        display: none;
+    }
+
+    .campsLeftBox {
+        width: 100%;
+    }
+
+    .fulls-buttons {
+        flex-direction: column;
+    }
+
+    .orangeButton{
+        width: 100%;
+        margin-bottom: 1em;
+        line-height: initial;
+    }
+
+    .callToActionHome {
+        margin: 0;
+        width: 100%;
+        top: 10%;
+    }
+
+    .ctCont figure {
+        width: 6em;
+        top: 65%;
+    }
+
+    .menuIcon {
+        display: block;
+        font-size: 2rem;
+        color: #ff6f1c;
+    }
+    #menu-main-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo {
+        height: 99px;
+        padding: 0 30px;
+    }
+
+    .nav-show {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header div {
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .main-menu > ul > li:hover {
+        background-color: #edf6f8;
+    }
+
+    .top-nav {
+        display:none !important;
+    }
+
+    .main-menu > ul > li:not(:last-child) {
+        border-bottom: solid 1px #f57b20;
+    }
+
+    .main-menu > ul > li {
+        padding: 0 45px;
+    }
+
+    .main-menu {
+        float: right;
+        display: block;
+        height: 100%;
+        background-color: rgba(218, 220, 224, 0.98);
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .baseFlex {
+        width: 100%;
+    }
+    .baseLinks ul {
+        padding: 0;
+    }
+
 }
